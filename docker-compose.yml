@@ -1,0 +1,7 @@
+node:
+    container_name: butler
+    build: .
+    environment:
+        PORT: 9090
+    ports:
+        - "9090:9090"

@@ -1,0 +1,32 @@
+{
+  "name": "butler",
+  "version": "0.1.0",
+  "description": "My personal butler in slack",
+  "main": "bin/bot.js",
+  "private": true,
+  "scripts": {
+    "precommit": "gulp lint",
+    "start": "node bin/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:RolfKoenders/butler.git"
+  },
+  "author": "Rolf Koenders <@RolfKoenders>",
+  "license": "MIT",
+  "homepage": "https://github.com/RolfKoenders/butler#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "convict": "^1.4.0",
+    "request": "^2.74.0",
+    "slackbotify": "*",
+    "path-exists": "3.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.16.0",
+    "gulp": "^3.9.1",
+    "gulp-xo": "^0.12.0",
+    "run-sequence": "^1.2.2",
+    "husky": "^0.11.7"
+  }
+}
