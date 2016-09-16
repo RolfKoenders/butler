@@ -4,6 +4,9 @@
 
 > My personal Butler in slack
 
+![search and download example](assets/images/butler_screenshot.png)<br>
+Always wanted your own butler? Now you can!
+
 ## Features
 Butler has the following features:
 - Get traffic information (Netherlands)
