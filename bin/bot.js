@@ -17,4 +17,10 @@ bot.registerHandler({
 	handler: handlers.trafficHandler
 });
 
+bot.registerHandler({
+	groups: ['direct'],
+	match: '!weather',
+	handler: handlers.weatherHandler
+});
+
 bot.run();

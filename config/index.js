@@ -18,6 +18,28 @@ let conf = convict({
 			default: 'butler',
 			env: 'BL_SLACK_NAME'
 		}
+	},
+	weather: {
+		apikey: {
+			doc: 'Forecast.io api key',
+			format: String,
+			default: null,
+			env: 'BL_WEATHER_KEY'
+		},
+		location: {
+			lat: {
+				doc: 'Latitude of the location to check weather conditions',
+				format: String,
+				default: null,
+				env: 'BL_WEATHER_LAT'
+			},
+			long: {
+				doc: 'Longitude of the location to check weather conditions',
+				format: String,
+				default: null,
+				env: 'BL_WEATHER_LONG'
+			}
+		}
 	}
 });
 

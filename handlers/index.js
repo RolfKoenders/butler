@@ -1,5 +1,6 @@
 'use strict';
 
 const trafficHandler = require('./traffic');
+const weatherHandler = require('./weather');
 
-module.exports = {trafficHandler};
+module.exports = {trafficHandler, weatherHandler};
