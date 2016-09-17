@@ -9,7 +9,8 @@ Always wanted your own butler? Now you can!
 
 ## Features
 Butler has the following features:
-- Get traffic information (Netherlands)
+- Traffic information (Netherlands)
+- Weather forecast
 
 ## Usage
 Butler is listening to the following commands / messages. It can depend per command where its available. Most of them work over per direct message.
@@ -19,6 +20,12 @@ Butler is listening to the following commands / messages. It can depend per comm
 Trigger: `!traffic`
 
 To get the latest traffic information of the dutch roads.
+
+### Weather forecast
+**Available in:** Direct message. <br>
+Trigger: `!weather`
+
+Get a weather forecast of the upcoming week, including today.
 
 ## Run
 To start the Butler simply run the start script inside the bin directory:
@@ -50,3 +57,6 @@ If a config file is not ideal for your setup use environment variables. You can 
 |-------------|-----|----------|
 | The slack token for this slackbot | BL_SLACK_KEY | ✓ |
 | The name of the slackbot | BL_SLACK_NAME | ✓ |
+| Forecast.IO Api key | BL_WEATHER_KEY | ✓ |
+| Default location | BL_WEATHER_LAT | ✓ |
+| Default location | BL_WEATHER_LONG | ✓ |

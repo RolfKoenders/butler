@@ -2,5 +2,12 @@
 	"bot": {
 		"token": "xoxb-XXXX-XXXX",
 		"name": "butler"
+	},
+	"weahter": {
+		"apikey": "jwlwifn4n290xn567sbqn5r8t6",
+		"location": {
+			"lat": "52.XXX",
+			"long": "5.XXX"
+		}
 	}
 }
