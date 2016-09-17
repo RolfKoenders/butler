@@ -13,6 +13,7 @@ gulp.task('lint', () => {
 	return gulp.src([
 		'gulpfile.js',
 		'config/*.js',
-		'lib/*.js'
+		'lib/*.js',
+		'handlers/*.js'
 	]).pipe(xo({quiet: true}));
 });
