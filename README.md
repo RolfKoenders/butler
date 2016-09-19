@@ -33,6 +33,12 @@ Trigger: `!weather`
 
 Get a weather forecast of the upcoming week, including today.
 
+### Weather forecast for location
+**Available in:** Direct message. <br>
+Trigger: `!weather <location>` _(e.g. !weather Amsterdam)_
+
+Get the weather forecast for a specific location.
+
 ## Run
 To start the Butler simply run the start script inside the bin directory:
 ```
