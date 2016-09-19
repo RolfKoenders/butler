@@ -9,25 +9,25 @@ Always wanted your own butler? Now you can!
 
 ## Features
 Butler has the following features:
-- Traffic information (Netherlands)
-- Weather forecast
+- :car: Traffic information (Netherlands)
+- :sunny: Weather forecast
 
 ## Usage
 Butler is listening to the following commands / messages. It can depend per command where its available. Most of them work over per direct message.
 
-### :car: Traffic
+### Traffic
 **Available in:** Direct message. <br>
 Trigger: `!traffic`
 
 To get the latest traffic information of the dutch roads.
 
-### :car: Traffic filter
+### Traffic filter
 **Available in:** Direct message. <br>
 Trigger: `!traffic <roadnumber>` _(e.g. !traffic a1)_
 
 Same functionality as `!traffic` but lets you add a filter to it.
 
-### :sunny: Weather forecast
+### Weather forecast
 **Available in:** Direct message. <br>
 Trigger: `!weather`
 
