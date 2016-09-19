@@ -24,15 +24,22 @@ function filterTraffic(message, callback) {
 	const filterOn = message.matchResult[1];
 	_getTrafficIncidents(incidents => {
 		if (incidents.length > 0) {
+			let filtered = 0;
+
 			incidents.map(incident => {
-				if (incident === filterOn) {
+				if (incident.roadNumber.toLowerCase() === filterOn) {
 					responseMessage += `*${incident.roadNumber}* ${incident.hoofdTraject} - _${incident.description}_ \n\n`;
+					filtered++;
 					return incident;
 				}
 				return false;
 			});
+
+			if (filtered === 0) {
+				responseMessage = `There are no incidents on the *${filterOn}* :slightly_smiling_face:`;
+			}
 		} else {
-			responseMessage = `There are no details. :slightly_smiling_face:`;
+			responseMessage = `There are no incidents! :slightly_smiling_face:`;
 		}
 		callback(responseMessage);
 	});
