@@ -21,12 +21,18 @@ bot.registerHandler({
 	groups: ['direct'],
 	match: /!traffic (.*)/i,
 	handler: handlers.trafficHandler.filterTraffic
-})
+});
 
 bot.registerHandler({
 	groups: ['direct'],
 	match: '!weather',
-	handler: handlers.weatherHandler
+	handler: handlers.weatherHandler.weather
+});
+
+bot.registerHandler({
+	groups: ['direct'],
+	match: /!weather (.*)/i,
+	handler: handlers.weatherHandler.filterWeather
 });
 
 bot.run();

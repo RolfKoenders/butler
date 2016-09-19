@@ -18,11 +18,12 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "convict": "^1.4.0",
-    "request": "^2.74.0",
-    "slackbotify": "*",
-    "path-exists": "3.0.0",
     "forecast-io": "^1.0.3",
-    "moment": "^2.15.0"
+    "moment": "^2.15.0",
+    "node-geocoder": "^3.15.0",
+    "path-exists": "3.0.0",
+    "request": "^2.74.0",
+    "slackbotify": "*"
   },
   "devDependencies": {
     "xo": "^0.16.0",
