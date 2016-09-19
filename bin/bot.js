@@ -14,8 +14,14 @@ let bot = new Bot(config.getProperties());
 bot.registerHandler({
 	groups: ['direct'],
 	match: '!traffic',
-	handler: handlers.trafficHandler
+	handler: handlers.trafficHandler.getAllTrafic
 });
+
+bot.registerHandler({
+	groups: ['direct'],
+	match: /!traffic (.*)/i,
+	handler: handlers.trafficHandler.filterTraffic
+})
 
 bot.registerHandler({
 	groups: ['direct'],

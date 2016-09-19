@@ -5,14 +5,32 @@ const cheerio = require('cheerio');
 
 const VID_URL = 'http://www.vid.nl/VI/overzicht';
 
-function trafficHandler(message, callback) {
-	let responseMessage = ``;
-
+function getAllTrafic(message, callback) {
+	let responseMessage = `:car: :car: :car: :car: \n`;
 	_getTrafficIncidents(incidents => {
 		if (incidents.length > 0) {
 			for (const incident of incidents) {
 				responseMessage += `*${incident.roadNumber}* ${incident.hoofdTraject} - _${incident.description}_ \n\n`;
 			}
+		} else {
+			responseMessage = `There are no details. :slightly_smiling_face:`;
+		}
+		callback(responseMessage);
+	});
+}
+
+function filterTraffic(message, callback) {
+	let responseMessage = ``;
+	const filterOn = message.matchResult[1];
+	_getTrafficIncidents(incidents => {
+		if (incidents.length > 0) {
+			incidents.map(incident => {
+				if (incident === filterOn) {
+					responseMessage += `*${incident.roadNumber}* ${incident.hoofdTraject} - _${incident.description}_ \n\n`;
+					return incident;
+				}
+				return false;
+			});
 		} else {
 			responseMessage = `There are no details. :slightly_smiling_face:`;
 		}
@@ -43,4 +61,4 @@ function _getTrafficIncidents(callback) {
 	});
 }
 
-module.exports = trafficHandler;
+module.exports = {getAllTrafic, filterTraffic};
