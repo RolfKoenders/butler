@@ -6,7 +6,7 @@ const cheerio = require('cheerio');
 const VID_URL = 'http://www.vid.nl/VI/overzicht';
 
 function getAllTrafic(message, callback) {
-	let responseMessage = `:car: :car: :car: :car: \n`;
+	let responseMessage = `:car:  :car:  :car:  :car: \n`;
 	_getTrafficIncidents(incidents => {
 		if (incidents.length > 0) {
 			for (const incident of incidents) {
