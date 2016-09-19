@@ -15,7 +15,7 @@ function weatherHandler(message, callback) {
 			long: config.get('weather.location.long')
 		},
 		lang: 'nl'
-	}
+	};
 
 	_getForecast(options).then(result => {
 		const days = result.daily.data;
@@ -45,7 +45,7 @@ function _getForecast(options) {
 			return result;
 		})
 		.catch(err => {
-			console.log('Something went wrong :/');
+			console.log('Something went wrong :/ ', err);
 		});
 }
 
