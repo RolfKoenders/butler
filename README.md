@@ -15,13 +15,19 @@ Butler has the following features:
 ## Usage
 Butler is listening to the following commands / messages. It can depend per command where its available. Most of them work over per direct message.
 
-### Traffic
+### :car: Traffic
 **Available in:** Direct message. <br>
 Trigger: `!traffic`
 
 To get the latest traffic information of the dutch roads.
 
-### Weather forecast
+### :car: Traffic filter
+**Available in:** Direct message. <br>
+Trigger: `!traffic <roadnumber>` _(e.g. !traffic a1)_
+
+Same functionality as `!traffic` but lets you add a filter to it.
+
+### :sunny: Weather forecast
 **Available in:** Direct message. <br>
 Trigger: `!weather`
 
