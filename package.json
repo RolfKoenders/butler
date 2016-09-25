@@ -23,7 +23,11 @@
     "node-geocoder": "^3.15.0",
     "path-exists": "3.0.0",
     "request": "^2.74.0",
-    "slackbotify": "*"
+
+    "slackbotify": "*",
+    "butler-plugin-loader": "*",
+    "butler-vid": "*",
+		"butler-weather": "*"
   },
   "devDependencies": {
     "xo": "^0.16.0",

@@ -25,20 +25,6 @@ let conf = convict({
 			format: String,
 			default: null,
 			env: 'BL_WEATHER_KEY'
-		},
-		location: {
-			lat: {
-				doc: 'Latitude of the location to check weather conditions',
-				format: String,
-				default: null,
-				env: 'BL_WEATHER_LAT'
-			},
-			long: {
-				doc: 'Longitude of the location to check weather conditions',
-				format: String,
-				default: null,
-				env: 'BL_WEATHER_LONG'
-			}
 		}
 	}
 });
