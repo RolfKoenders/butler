@@ -39,6 +39,16 @@ Trigger: `!weather <location>` _(e.g. !weather Amsterdam)_
 
 Get the weather forecast for a specific location.
 
+### Chuck norris jokes
+**Available in:** Direct message. <br>
+Trigger: `!chuck`
+
+### yo momma jokes
+**Available in:** Direct message. <br>
+Trigger: `!momma`
+
+Get a random yo momma joke
+
 ## Run
 To start the Butler simply run the start script inside the bin directory:
 ```

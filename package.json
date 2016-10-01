@@ -27,7 +27,8 @@
     "slackbotify": "*",
     "butler-plugin-loader": "*",
     "butler-vid": "*",
-		"butler-weather": "*"
+    "butler-weather": "*",
+    "butler-jokes": "*"
   },
   "devDependencies": {
     "xo": "^0.16.0",
